@@ -16,6 +16,10 @@ class Func:
             "count different symbols": len([i for i in text_input if i in string.punctuation])
         }
 
+    @staticmethod
+    def count_digits_in_text(text_input: str) -> int:
+        return len([i for i in text_input if i.isdigit()])
+
 
 if __name__ == '__main__':
     print(Func.checkout_palindrome("111"))
